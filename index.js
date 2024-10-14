@@ -71,4 +71,8 @@ const person = { name: 'Alice' };
 greet.call(person); // Output: Hello, my name is Alice
 
 
-
+// this depends on the context: Where and how a function is called affects what this refers to.
+// In methods, this refers to the object.
+// In constructors, this refers to the new instance.
+// In event handlers, this refers to the element that fired the event.
+// Arrow functions use this from the surrounding code.
