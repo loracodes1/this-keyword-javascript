@@ -31,3 +31,14 @@ function Car(brand) {
 const myCar = new Car('Toyota');
 console.log(myCar.brand); // Output: Toyota
 
+
+// 4. In Event Handlers
+
+// When a function is used as an event handler, this refers to the element that triggered the event.
+<button id="myButton">Click me</button>
+
+<script>
+document.getElementById('myButton').addEventListener('click', function() {
+    console.log(this); // Output: <button>Click me</button>
+});
+</script>
