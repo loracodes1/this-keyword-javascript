@@ -59,3 +59,16 @@ const obj = {
 obj.regularFunction(); // Output: 100
 obj.arrowFunction();   // Output: undefined (or the global context)
 
+//6. Explicit Binding
+
+// You can control what this refers to using call(), apply(), or bind().
+function greet() {
+    console.log(`Hello, my name is ${this.name}`);
+}
+
+const person = { name: 'Alice' };
+
+greet.call(person); // Output: Hello, my name is Alice
+
+
+
