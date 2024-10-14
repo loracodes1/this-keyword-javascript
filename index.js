@@ -7,7 +7,7 @@
 
 console.log(this); // In the browser, this logs the Window object
 
-// Inside an Object Method
+// 2. Inside an Object Method
 
 // When you use this inside a method of an object, it refers to that object.
 
@@ -19,3 +19,15 @@ const cat = {
 };
 
 cat.meow(); // Output: Whiskers says Meow!
+
+// 3.Inside a Constructor Function
+
+// When you create an object using a constructor function, this refers to the new object being created.
+
+function Car(brand) {
+    this.brand = brand; // `this` refers to the new Car object
+}
+
+const myCar = new Car('Toyota');
+console.log(myCar.brand); // Output: Toyota
+
