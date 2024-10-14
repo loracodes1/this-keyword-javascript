@@ -6,3 +6,16 @@
 
 
 console.log(this); // In the browser, this logs the Window object
+
+// Inside an Object Method
+
+// When you use this inside a method of an object, it refers to that object.
+
+const cat = {
+    name: 'Whiskers',
+    meow: function() {
+        console.log(this.name + ' says Meow!');
+    }
+};
+
+cat.meow(); // Output: Whiskers says Meow!
